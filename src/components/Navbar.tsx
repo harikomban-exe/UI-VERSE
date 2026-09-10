@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Shield, Terminal, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import logoImg from '../assets/a1.png';
+
 interface NavbarProps {
   onOpenAbout: () => void;
   onOpenContact: () => void;
@@ -52,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAbout, onOpenContact }) =>
             >
               <div className="relative w-9 h-9 md:w-10 md:h-10 transition-transform duration-300 group-hover:scale-105">
                 <img
-                  src="/assets/a1.png"
+                  src={logoImg}
                   alt="ASTHRA Logo"
                   className="w-full h-full object-contain filter drop-shadow-[0_0_10px_rgba(0,240,255,0.7)]"
                 />

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Instagram, Mail, ArrowUpRight, Shield, Globe } from 'lucide-react';
 import { MagneticButton } from './MagneticButton';
+import logoImg from '../assets/a1.png';
 
 interface FooterProps {
   onOpenContact?: () => void;
@@ -52,7 +53,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             <div className="relative w-20 h-20 md:w-28 md:h-28">
               <div className="absolute inset-0 rounded-full bg-[#00F0FF]/20 blur-xl animate-pulse" />
               <img
-                src="/assets/a1.png"
+                src={logoImg}
                 alt="ASTHRA Emblem"
                 className="w-full h-full object-contain filter drop-shadow-[0_0_20px_rgba(0,240,255,0.6)]"
               />
@@ -71,7 +72,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             <div className="md:col-span-6 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10">
-                  <img src="/assets/a1.png" alt="ASTHRA" className="w-full h-full object-contain" />
+                  <img src={logoImg} alt="ASTHRA" className="w-full h-full object-contain" />
                 </div>
                 <span className="font-display font-bold text-lg tracking-[0.25em] text-white">
                   ASTHRA

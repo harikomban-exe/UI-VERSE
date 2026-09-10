@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, useSpring } from 'framer-motion';
+import logoImg from '../assets/a1.png';
 
 export const LogoOrbit: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -125,7 +126,7 @@ export const LogoOrbit: React.FC = () => {
               className="relative z-20 w-44 h-44 md:w-60 md:h-60 flex items-center justify-center"
             >
               <img
-                src="/assets/a1.png"
+                src={logoImg}
                 alt="ASTHRA Core Logo"
                 className="w-full h-full object-contain filter drop-shadow-[0_0_35px_rgba(0,240,255,0.7)]"
               />

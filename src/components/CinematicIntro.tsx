@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logoImg from '../assets/a1.png';
 
 interface CinematicIntroProps {
   onComplete: () => void;
@@ -121,7 +122,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
                   className="relative z-10 w-44 h-44 md:w-56 md:h-56 flex items-center justify-center"
                 >
                   <img
-                    src="/assets/a1.png"
+                    src={logoImg}
                     alt="ASTHRA Logo"
                     className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(0,240,255,0.6)]"
                   />

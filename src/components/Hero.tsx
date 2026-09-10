@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, Sparkles, Compass, ShieldAlert } from 'lucide-react';
 import { MagneticButton } from './MagneticButton';
+import logoImg from '../assets/a1.png';
 import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
@@ -70,7 +71,7 @@ export const Hero: React.FC = () => {
           {/* Energy Ring behind Logo */}
           <div className="absolute inset-0 rounded-full border border-[#00F0FF]/40 shadow-[0_0_30px_rgba(0,240,255,0.4)] animate-pulse" />
           <img
-            src="/assets/a1.png"
+            src={logoImg}
             alt="ASTHRA Emblem"
             className="w-full h-full object-contain filter drop-shadow-[0_0_40px_rgba(0,240,255,0.7)]"
           />
